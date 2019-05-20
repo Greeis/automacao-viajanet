@@ -24,7 +24,7 @@ class HomePage
         first('button[data-pika-day="26"]').click
         
         find('#arrivalDate').click
-        first('button[data-pika-day="28"]').click
+        first('button[data-pika-day="27"]').click
     end
 
     def nr_passengers(adult,child,baby)

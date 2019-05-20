@@ -2,6 +2,7 @@ class CheckoutPage
     include Capybara::DSL
 
     def include_email(email)
+        #find(:xpath, '//*[@id="my-account_email"]')
         find('#my-account_email').set email
     end
 
