@@ -12,7 +12,7 @@ Given("with round trip date") do
 end
   
 When("I fill in all the necessary data to buy a reservation") do
-    find(find('h1').text 'Informações da compra').click
+    sleep 5
     @checkout_page.include_email('graaziele.182@gmail.com')
     @checkout_page.include_passenger(
         'Graziele','Almeida','29/06/1993','Feminino'

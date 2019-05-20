@@ -7,7 +7,7 @@ class SearchTicketPage
 
     def confirm_ticket
         first('.btn-checkin').click
-        find('.md-close').click
+        #find('.md-close').click
     end
                                   
 end
