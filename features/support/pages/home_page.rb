@@ -21,10 +21,10 @@ class HomePage
 
     def confirm_date
         find('#departureDate').click
-        first('button[data-pika-day="26"]').click
+        first('button[data-pika-day="29"]').click
         
         find('#arrivalDate').click
-        first('button[data-pika-day="27"]').click
+        first('button[data-pika-day="30"]').click
     end
 
     def nr_passengers(adult,child,baby)

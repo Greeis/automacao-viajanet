@@ -9,4 +9,4 @@ Feature: Reserve Purchase
         And with round trip date
         When I fill in all the necessary data to buy a reservation
         And I finish my purchase
-        Then I see the status 'Reserva em processamento'
+        Then I see the status 'Reserva em processamento.'

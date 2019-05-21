@@ -28,21 +28,21 @@ class CheckoutPage
         find('#cpf_card-0').set cpf
     end
 
-    def include_payment_information(zipcode,address,number_address,neighborhood,city,state)
+    def include_payment_information(zipcode,address,neighborhood,city,state,number)
         find('#zipcode-0').set zipcode
         find('#address-0').set address
-        find('#number_address-0').set number_address
         find('#neighborhood-0').set neighborhood
         find('#city-0').set city
         states = find('select[name=state]')
         states.find('option', text: state).select_option
+        find('#number_address-0').set number
     end
 
     def include_contact(email,type,number)
         find('#contact_email').set email
         find('#contact_email_confirm').set email
         type_contact = find('select[name=contact_phone_0]')
-        type_contact.find('option', text: tipo).select_option
+        type_contact.find('option', text: type).select_option
         find('#contact_phonenumber_0').set number
     end
 
